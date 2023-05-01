@@ -1,0 +1,44 @@
+$default-background: #434040;
+$default-color: #FFFFFF;
+
+$disabled-background: #414141;
+$disabled-color: #767676;
+
+$hover-background: #D4D4D4;
+$hover-color: #000000;
+
+$pressed-background: #FFFFFF;
+$pressed-color: #000000;
+
+
+
+.button-1 {
+  -fx-background-color: $default-background;
+  Text {
+    -fx-fill: $default-color;
+  }
+  &:hover {
+    -fx-background-color: $hover-background;
+    Text {
+      -fx-fill: $hover-color;
+    }
+  }
+
+  &:disabled {
+    -fx-background-color: $disabled-background;
+    Text {
+      -fx-fill: $disabled-color;
+    }
+  }
+
+  &:pressed {
+    -fx-background-color: $pressed-background;
+    Text {
+      -fx-fill: $pressed-color;
+    }
+  }
+
+  &:hover {
+    -fx-cursor: hand;
+  }
+}

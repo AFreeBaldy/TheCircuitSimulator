@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="root" stylesheets="@../styles/style.css" type="Pane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.capedbaldy.thecircuitsimulator.controllers.HomeController">
+   <VBox fx:id="homePageNode" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" VBox.vgrow="ALWAYS">
+      <Pane prefHeight="261.0" prefWidth="1920.0" styleClass="header">
+         <Pane layoutX="146.0" prefHeight="261.0" prefWidth="1628.0">
+            <children>
+               <TextFlow fx:id="titleTextFlow" layoutX="149.0" layoutY="30.0" textAlignment="CENTER">
+                  <padding>
+                     <Insets left="-8.0" top="2.0" />
+                  </padding>
+                  <children>
+                     <Text disable="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="back" text="C" />
+                     <Text disable="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="back" text="I" />
+                     <Text disable="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="back" text="R" />
+                     <Text disable="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="back" text="C" />
+                     <Text disable="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="back" text="U" />
+                     <Text disable="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="back" text="I" />
+                     <Text disable="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="back" text="T" />
+                     <Text disable="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="back" text=" " />
+                     <Text disable="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="back" text="S" />
+                     <Text disable="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="back" text="I" />
+                     <Text disable="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="back" text="M" />
+                     <Text disable="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="back" text="U" />
+                     <Text disable="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="back" text="L" />
+                     <Text disable="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="back" text="A" />
+                     <Text disable="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="back" text="T" />
+                     <Text disable="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="back" text="O" />
+                     <Text disable="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="back" text="R" />
+                  </children>
+               </TextFlow>
+               <Text disable="true" layoutX="145.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CIRCUIT SIMULATOR" textAlignment="CENTER" />
+            </children>
+         </Pane>
+      </Pane>
+      <HBox alignment="CENTER" prefWidth="200.0" styleClass="header" />
+      <VBox alignment="CENTER" VBox.vgrow="ALWAYS">
+         <VBox styleClass="home-menu">
+            <HBox fx:id="createProjectButton" alignment="CENTER" prefWidth="1876.0">
+               <fx:include source="button-1.fxml" />
+            </HBox>
+            <HBox fx:id="loadProjectButton" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefWidth="200.0">
+               <fx:include source="button-1.fxml" />
+            </HBox>
+            <HBox fx:id="exitButton" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefWidth="200.0">
+               <fx:include source="button-1.fxml" />
+            </HBox>
+         </VBox>
+      </VBox>
+      <Pane prefHeight="77.0" prefWidth="1920.0" />
+   </VBox>
+</fx:root>

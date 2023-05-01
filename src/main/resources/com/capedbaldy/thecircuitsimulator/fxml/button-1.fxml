@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="160.0" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Text  strokeType="OUTSIDE" strokeWidth="0.0" text="Button" HBox.hgrow="ALWAYS" />
+    </children>
+   <styleClass>
+      <String fx:value="button-1" />
+      <String fx:value="my-btn" />
+   </styleClass>
+</HBox>

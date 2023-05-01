@@ -1,0 +1,42 @@
+
+@font-face {
+  font-family: 'HOT GRILL demo';
+  src: url(../fonts/HotGrillFont.ttf);
+}
+
+@font-face {
+  font-family: 'Liberation Mono';
+  src: url('../fonts/LiberationMono-Bold.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Liberation Mono';
+  src: url('../fonts/LiberationMono-Regular.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Born2bSportyV2';
+  src: url('../fonts/Born2bSportyV2.ttf');
+  font-weight: normal;
+}
+
+Text {
+  -fx-font-family: "Liberation Mono";
+  -fx-font-size: 28;
+}
+
+.hide {
+  visibility: invisible;
+}
+
+
+
+@import "button";
+@import "home";
+@import "create-project";
+@import "load-project";
+
+
+
+

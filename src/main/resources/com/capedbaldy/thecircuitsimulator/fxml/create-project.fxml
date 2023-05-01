@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<fx:root id="create-project" stylesheets="@../styles/style.css" type="Pane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.capedbaldy.thecircuitsimulator.controllers.CreateProjectController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="1080.0" prefWidth="1920.0">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <VBox id="create-project" alignment="CENTER" spacing="56.0">
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="CREATE PROJECT" textAlignment="CENTER" />
+                     <VBox alignment="CENTER" spacing="20.0">
+                  
+                        <TextField fx:id="textBox" prefHeight="85.0" prefWidth="700.0" styleClass="text-box" />
+                        <Text fx:id="errorText" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="error-text" text="Please enter a name for this project" textAlignment="CENTER" />
+                     </VBox>
+                     <HBox alignment="CENTER" prefHeight="65.0" prefWidth="700.0" spacing="25.0">
+                        <VBox fx:id="backButton" alignment="CENTER" styleClass="back-btn">
+                           <fx:include source="button-1.fxml" />
+                        </VBox>
+                        <VBox fx:id="createButton" alignment="CENTER" layoutX="373.0" layoutY="10.0" styleClass="create-btn">
+                           <fx:include source="button-1.fxml" />
+                        </VBox>
+                     </HBox>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</fx:root>

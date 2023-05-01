@@ -1,0 +1,16 @@
+$list-view-background: #3F3F3F;
+$input-text-color: #FFFFFF;
+$error-text-color: #DD5B5C;
+
+
+#load-project {
+  .title {
+    -fx-font-size: 80;
+    -fx-font-weight: bold;
+    -fx-fill: $input-text-color;
+  }
+
+  .list-view-1 {
+    -fx-background-color: $list-view-background;
+  }
+}

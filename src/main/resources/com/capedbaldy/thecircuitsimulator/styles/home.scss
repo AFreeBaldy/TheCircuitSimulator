@@ -1,0 +1,32 @@
+$background-main: #353536;
+$background-secondary: #2D2D2D;
+
+.root {
+  -fx-background-color: $background-main !important;
+}
+
+.header {
+  -fx-background-color: $background-secondary;
+
+  Text {
+    -fx-font-family: "Born2bSportyV2";
+    -fx-font-size: 200;
+  }
+
+  .back {
+    -fx-fill: blue;
+  }
+}
+
+.home-menu {
+  -fx-spacing: 15;
+
+  .my-btn {
+    -fx-pref-height: 55px;
+    -fx-pref-width: 320;
+  }
+
+  Text {
+    -fx-font-size: 28;
+  }
+}

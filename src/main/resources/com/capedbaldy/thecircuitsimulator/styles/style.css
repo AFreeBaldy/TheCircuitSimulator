@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "HOT GRILL demo";
+  src: url(../fonts/HotGrillFont.ttf);
+}
+@font-face {
+  font-family: "Liberation Mono";
+  src: url("../fonts/LiberationMono-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Liberation Mono";
+  src: url("../fonts/LiberationMono-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Born2bSportyV2";
+  src: url("../fonts/Born2bSportyV2.ttf");
+  font-weight: normal;
+}
+Text {
+  -fx-font-family: "Liberation Mono";
+  -fx-font-size: 28;
+}
+
+.hide {
+  visibility: invisible;
+}
+
+.button-1 {
+  -fx-background-color: #434040;
+}
+.button-1 Text {
+  -fx-fill: #FFFFFF;
+}
+.button-1:hover {
+  -fx-background-color: #D4D4D4;
+}
+.button-1:hover Text {
+  -fx-fill: #000000;
+}
+.button-1:disabled {
+  -fx-background-color: #414141;
+}
+.button-1:disabled Text {
+  -fx-fill: #767676;
+}
+.button-1:pressed {
+  -fx-background-color: #FFFFFF;
+}
+.button-1:pressed Text {
+  -fx-fill: #000000;
+}
+.button-1:hover {
+  -fx-cursor: hand;
+}
+
+.root {
+  -fx-background-color: #353536 !important;
+}
+
+.header {
+  -fx-background-color: #2D2D2D;
+}
+.header Text {
+  -fx-font-family: "Born2bSportyV2";
+  -fx-font-size: 200;
+}
+.header .back {
+  -fx-fill: blue;
+}
+
+.home-menu {
+  -fx-spacing: 15;
+}
+.home-menu .my-btn {
+  -fx-pref-height: 55px;
+  -fx-pref-width: 320;
+}
+.home-menu Text {
+  -fx-font-size: 28;
+}
+
+#create-project .title {
+  -fx-font-size: 80;
+  -fx-font-weight: bold;
+  -fx-fill: #FFFFFF;
+}
+#create-project .text-box {
+  -fx-background-color: #3F3F3F !important;
+  -fx-border-width: 0 !important;
+  -fx-font-size: 56;
+  -fx-text-fill: #FFFFFF;
+}
+#create-project .text-box:focused {
+  -fx-border-width: 0 !important;
+}
+#create-project .error-text {
+  -fx-fill: #DD5B5C;
+  -fx-font-size: 28;
+  -fx-font-weight: bold;
+}
+#create-project .my-btn {
+  -fx-pref-width: 160;
+  -fx-pref-height: 55;
+}
+
+#load-project .title {
+  -fx-font-size: 80;
+  -fx-font-weight: bold;
+  -fx-fill: #FFFFFF;
+}
+#load-project .list-view-1 {
+  -fx-background-color: #3F3F3F;
+}
+
+/*# sourceMappingURL=style.css.map */
