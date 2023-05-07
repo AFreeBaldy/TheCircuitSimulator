@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-
 <fx:root id="load-project" styleClass="root" stylesheets="@../styles/style.css" type="Pane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.capedbaldy.thecircuitsimulator.controllers.LoadProjectController">
    <children>
       <HBox alignment="CENTER" prefHeight="1080.0" prefWidth="1920.0">

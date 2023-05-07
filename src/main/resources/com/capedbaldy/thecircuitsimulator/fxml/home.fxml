@@ -8,7 +8,7 @@
 <?import javafx.scene.text.TextFlow?>
 
 <fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="root" stylesheets="@../styles/style.css" type="Pane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.capedbaldy.thecircuitsimulator.controllers.HomeController">
-   <VBox fx:id="homePageNode" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" VBox.vgrow="ALWAYS">
+   <VBox fx:id="homePageNode" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" VBox.vgrow="ALWAYS">
       <Pane prefHeight="261.0" prefWidth="1920.0" styleClass="header">
          <Pane layoutX="146.0" prefHeight="261.0" prefWidth="1628.0">
             <children>

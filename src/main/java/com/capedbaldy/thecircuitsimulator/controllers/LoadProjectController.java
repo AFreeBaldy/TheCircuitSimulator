@@ -2,9 +2,14 @@ package com.capedbaldy.thecircuitsimulator.controllers;
 
 import com.capedbaldy.thecircuitsimulator.Core;
 import com.capedbaldy.thecircuitsimulator.SceneList;
+import javafx.event.Event;
+import javafx.event.EventHandler;
+import javafx.event.EventType;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
+import javafx.scene.control.SelectionMode;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
@@ -13,6 +18,8 @@ import javafx.scene.text.Text;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
 
 public class LoadProjectController extends Pane implements Initializable, MyControllers {
     public ListView<String> listView;
@@ -40,8 +47,10 @@ public class LoadProjectController extends Pane implements Initializable, MyCont
         text.setText("COPY");
         text = (Text) loadButton.lookup("Text");
         text.setText("LOAD");
+        listView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
 
         bindMouseEvents();
+        renderProjectList();
     }
 
     private void bindMouseEvents() {
@@ -76,9 +85,28 @@ public class LoadProjectController extends Pane implements Initializable, MyCont
     private void onCopyButtonClicked(MouseEvent mouseEvent) {
 
     }
-
+    private void dereferenceEvent(Node node, EventType event, Consumer<EventHandler> consumer)
+    {
+        node.removeEventHandler(event,  consumer::accept);
+    }
     private void onRenameButtonClicked(MouseEvent mouseEvent) {
+        // TODO: 5/1/2023 OPEN THE RENAME WINDOW
+        String projectName = listView.getSelectionModel().getSelectedItem();
+        HBox ui  = renameUI;
+        HBox cancelButton = (HBox) ui.lookup("#cancel-btn");
+        HBox renameButton = (HBox) ui.lookup("#rename-btn");
+        Consumer<MouseEvent> cancelButtonClicked = null;
+        cancelButtonClicked = event -> {
+            ui.setVisible(false);
+            ui.setDisable(true);
+            dereferenceEvent(cancelButton, MouseEvent.MOUSE_CLICKED, cancelButtonClicked);
+        };
+        cancelButton.setOnMouseClicked(cancelButtonClicked::accept);
 
+        /*
+        *  listView.getSelectio
+        *
+        * */
     }
 
     private void onDeleteButtonClicked(MouseEvent mouseEvent) {
